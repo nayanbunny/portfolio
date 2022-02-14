@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Nayan - Portfolio</title>
+        <meta name="description" content="Portfolio for Nayan Profile" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="css/style.css" />
+
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <span class="navbar__logo">
+                    <a href="/">NAYAN</a>
+                </span>
+                <!-- Nav Toggle Checkbox Hack -->
+                <input type="checkbox" class="hide" id="checkbox__navbar__toggle" />
+                <label for="checkbox__navbar__toggle" class="hamburger navbar__toggle" onclick="changeNavToggleIcon();">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"> </div>
+                </label>
+                <ul class="navbar__links">
+                    
+                    <li class="navbar__item active"><a class="navbar__link" href="#hero-section">Home</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#projects-section">Projects</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#work-section">Work</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#skills-section">Skills</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#about-section">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero-section" id="hero-section">
+            <div class="hero-section-background">
+                <div class="hero__section__background__bubbles">
+                    <div class="hero__section__background__bubble1"></div>
+                    <div class="hero__section__background__bubble2"></div>
+                    <div class="hero__section__background__bubble3"></div>
+                </div>
+                <div class="hero__section__background__shape">
+                    <svg data-name="Hero Section Layer" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                        <path d="M0 368L12.3 368C24.7 368 49.3 368 74 367.2C98.7 366.3 123.3 364.7 148 369.2C172.7 373.7 197.3 384.3 221.8 382.5C246.3 380.7 270.7 366.3 295.2 345.7C319.7 325 344.3 298 369 280C393.7 262 418.3 253 443 257.5C467.7 262 492.3 280 517 309.7C541.7 339.3 566.3 380.7 591 387C615.7 393.3 640.3 364.7 664.8 334.2C689.3 303.7 713.7 271.3 738.2 271.3C762.7 271.3 787.3 303.7 812 319.8C836.7 336 861.3 336 886 336C910.7 336 935.3 336 947.7 336L960 336L960 145L947.7 153C935.3 161 910.7 177 886 182.3C861.3 187.7 836.7 182.3 812 172.5C787.3 162.7 762.7 148.3 738.2 131.3C713.7 114.3 689.3 94.7 664.8 90.2C640.3 85.7 615.7 96.3 591 114.3C566.3 132.3 541.7 157.7 517 159.5C492.3 161.3 467.7 139.7 443 121.7C418.3 103.7 393.7 89.3 369 92.8C344.3 96.3 319.7 117.7 295.2 122.2C270.7 126.7 246.3 114.3 221.8 117.2C197.3 120 172.7 138 148 143.3C123.3 148.7 98.7 141.3 74 128.7C49.3 116 24.7 98 12.3 89L0 80Z" fill="#006c6c"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="section-content hero-section-content">
+                <div class="hero__greeting">
+                    <span class="hero__greeting__icon">&#62;</span>
+                    <span class="hero__greeting__message">Hello World!</span>
+                </div>
+                <div class="hero__title">
+                    <span class="hero__title__pre">I'm</span>
+                    <span class="hero__title__name">Nayan</span>
+                </div>
+                <span id="hero__role__title" class="hero__subtitle" data-wait="1000" 
+                data-words='["Full Stack Developer", "Azure Cloud Engineer", "DevOps Engineer", "Technical Lead", "Tutor"]'></span>
+            </div>
+        </section>
+        <section class="projects-section" id="projects-section">
+            <div class="projects-section-background">
+                <svg data-name="Projects Section Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="section-content projects-section-content">
+                <div class="projects__title">
+                    <span class="section__title projects__title__name">
+                        PROJECTS
+                    </span>
+                </div>
+                <div class="projects__cards">
+                    <div class="project__card project__tcgop">
+                        <div class="project__card__header">
+                            <h4 class="project__card__title">TCGOP</h4>
+                        </div>
+                        <div class="project__card__body">
+                            <p class="project__card__description">
+                                TCS Cloud Governance and Optimization Platform (TCGOP) includes an intelligent and extensible rule engine to analyze Azure resources based on proven cost optimization practices and generates actionable recommendations.
+                            </p>
+                            <br/>
+                            <div class="project__card__links">
+                                <a href="https://www.youtube.com/watch?v=UJiVJs2V4nU" target="_blank">#Youtube</a>
+                                <a href="https://www.tcs.com/cloud-governance-framework-adoption" target="_blank">#TCS</a>
+                            </div>
+                        </div>
+                        <div class="project__card__footer">
+                            <p class="project__card__extra">Technical Lead / Architect</p>
+                            <p class="project__card__extra">TCS (India)</p>
+                        </div>
+                    </div>
+                    <div class="project__card project__rad">
+                        <div class="project__card__header">
+                            <h4 class="project__card__title">RAD</h4>
+                        </div>
+                        <div class="project__card__body">
+                            <p class="project__card__description">
+                                Rapid Application Development (RAD) Framework for Microservice Centralized RBAC System with re-usable Web and API Development Solution and Project Templates. Implemented with Microservices, Microsoft Technologies, Cloud and DevOps Automation.
+                            </p>
+                        </div>
+                        <div class="project__card__footer">
+                            <p class="project__card__extra">Team Lead</p>
+                            <p class="project__card__extra">Rolls-Royce (UK)</p>
+                        </div>
+                    </div>
+                    <div class="project__card project__micronlegacy">
+                        <div class="project__card__header">
+                            <h4 class="project__card__title">MT Modernization</h4>
+                        </div>
+                        <div class="project__card__body">
+                            <p class="project__card__description">
+                                Micron Technology (MT) Modernization includes migration of legacy .Net applications into latest framework. Implemented using latest Microsoft Technologies, LDAP, Organizational Groups, and AD Sync etc.
+                            </p>
+                        </div>
+                        <div class="project__card__footer">
+                            <p class="project__card__extra">Technical Lead</p>
+                            <p class="project__card__extra">Micron Technology (USA)</p>
+                        </div>
+                    </div>
+                    <div class="project__card project__axaltaracing">
+                        <div class="project__card__header">
+                            <h4 class="project__card__title">Axalta Racing</h4>
+                        </div>
+                        <div class="project__card__body">
+                            <p class="project__card__description">
+                                Axalta Racing official website migration from Google Cloud Platform (GCP) to Microsoft Azure without compromise on Performance and Security.
+                            </p>
+                            <br/>
+                            <div class="project__card__links">
+                                <a href="https://axaltaracing.com/" target="_blank">#Website</a>
+                            </div>
+                        </div>
+                        <div class="project__card__footer">
+                            <p class="project__card__extra">Technical Architect / Lead</p>
+                            <p class="project__card__extra">Axalta (USA)</p>
+                        </div>
+                    </div>
+                    <div class="project__card project__vbw">
+                        <div class="project__card__header">
+                            <h4 class="project__card__title">VBW</h4>
+                        </div>
+                        <div class="project__card__body">
+                            <p class="project__card__description">
+                                Virtual Brain Water (VBW) application provides a view of plant level data across multiple water treatment plants. Modernization of application with Microservices architecture and hosting in Microsoft Cloud Platform with improved Performance and Security.
+                            </p>
+                        </div>
+                        <div class="project__card__footer">
+                            <p class="project__card__extra">Technical Lead</p>
+                            <p class="project__card__extra">Sembcorp (Singapore)</p>
+                        </div>
+                    </div>
+                    <div class="project__card project__nationwide">
+                        <div class="project__card__header">
+                            <h4 class="project__card__title">Generali</h4>
+                        </div>
+                        <div class="project__card__body">
+                            <p class="project__card__description">
+                                Application to manage and process on property quotations. Also, few application on Modernization with latest Microsoft Technologies.
+                            </p>
+                        </div>
+                        <div class="project__card__footer">
+                            <p class="project__card__extra">Technical Lead</p>
+                            <p class="project__card__extra">Generali (Italy)</p>
+                        </div>
+                    </div>
+                    <div class="project__card project__gmts">
+                        <div class="project__card__header">
+                            <h4 class="project__card__title">GTMS (UPS)</h4>
+                        </div>
+                        <div class="project__card__body">
+                            <p class="project__card__description">
+                                Global Transport Management Solutions (GTMS) provides Package Delivery Management Portal for Workflow, Tracking, Shipment, Bill, Reports, and assigning shipment containers etc.
+                            </p>
+                        </div>
+                        <div class="project__card__footer">
+                            <p class="project__card__extra">Technical Lead</p>
+                            <p class="project__card__extra">UPS (USA)</p>
+                        </div>
+                    </div>
+                    <div class="project__card project__rmm">
+                        <div class="project__card__header">
+                            <h4 class="project__card__title">RMM</h4>
+                        </div>
+                        <div class="project__card__body">
+                            <p class="project__card__description">
+                                Rajini Makkal Mandram (RMM) Website and Mobile (Android/iOS) app developed to connect and interact with Tamil Nadu voters like social media platform based on voter account information.
+                            </p>
+                            <br/>
+                            <div class="project__card__links">
+                                <a href="https://web.archive.org/web/20201101090230/https://www.rajinimakkalmandram.org/" target="_blank">#Website</a>
+                                <a href="https://play.google.com/store/apps/details?id=org.rajinimandram&hl=en" target="_blank">#PlayStore</a>                                
+                            </div>
+                        </div>
+                        <div class="project__card__footer">
+                            <p class="project__card__extra">Technical Lead</p>
+                            <p class="project__card__extra">Rajinikanth (Actor) (India)</p>
+                        </div>
+                    </div>
+                    <div class="project__card project__dataplatform">
+                        <div class="project__card__header">
+                            <h4 class="project__card__title">Data Platform Portal</h4>
+                        </div>
+                        <div class="project__card__body">
+                            <p class="project__card__description">
+                                Data Platfrom Portal for City West Water in Australia to manage and administration of data and services like Water Consumption, Leakage, Wastage, and Routing Mechanism etc. Implemented with latest Microsoft Technologies and Machine Learning.
+                            </p>
+                        </div>
+                        <div class="project__card__footer">
+                            <p class="project__card__extra">Sr. Developer</p>
+                            <p class="project__card__extra">CWW (Australia)</p>
+                        </div>
+                    </div>
+                    <div class="project__card project__repairadvisor">
+                        <div class="project__card__header">
+                            <h4 class="project__card__title">Repair Advisor (CAA)</h4>
+                        </div>
+                        <div class="project__card__body">
+                            <p class="project__card__description">
+                                Canadian Automobile Association (CAA) Repair Advisor Portal to manage Automobile stores details across Canada and helps to schedule a visit. Also, helps to check availability and cost of vehicle parts.
+                            </p>
+                            <br/>
+                            <div class="project__card__links">
+                                <a href="https://www.caaquebec.com/en/on-the-road/approved-auto-repair-services/" target="_blank">#Website</a>
+                            </div>
+                        </div>
+                        <div class="project__card__footer">
+                            <p class="project__card__extra">Sr. Developer</p>
+                            <p class="project__card__extra">CAA (Canada)</p>
+                        </div>
+                    </div>
+                    <div class="project__card project__idms">
+                        <div class="project__card__header">
+                            <h4 class="project__card__title">iDMS (P&G)</h4>
+                        </div>
+                        <div class="project__card__body">
+                            <p class="project__card__description">
+                                Procter & Gamble (P&G) iDMS to manage, maintenane, digital processing and custom cognitive service of goods among hubs, stores and branches for mismatches and cost invoices. Implemented with latest Microsoft Technologies, Cloud and DevOps Automation.
+                            </p>
+                        </div>
+                        <div class="project__card__footer">
+                            <p class="project__card__extra">Sr. Developer</p>
+                            <p class="project__card__extra">P&G (India)</p>
+                        </div>
+                    </div>
+                    <div class="project__card project__cat">
+                        <div class="project__card__header">
+                            <h4 class="project__card__title">CAT</h4>
+                        </div>
+                        <div class="project__card__body">
+                            <p class="project__card__description">
+                                Cloud Assessment Tool (CAT) performs assessment of on-premise applications and checks compatibility with Cloud Platforms. Also, Generate details report and compatibility infrastructure recommendations with optimized cost and performance with paramount security.
+                            </p>
+                        </div>
+                        <div class="project__card__footer">
+                            <p class="project__card__extra">Sr. Developer</p>
+                            <p class="project__card__extra">Scotiabank (Canada)</p>
+                        </div>
+                    </div>
+                    <div class="project__card project__dsoa">
+                        <div class="project__card__header">
+                            <h4 class="project__card__title">DSOA E-Services</h4>
+                        </div>
+                        <div class="project__card__body">
+                            <p class="project__card__description">
+                                Dubai Silicon Oasis Authority (DSOA) E-Services Portal provides clients with an integrated online e-Business System offering them fast and efficient services like Government, IT and Municipal etc.
+                            </p>
+                            <br/>
+                            <div class="project__card__links">
+                                <a href="https://eservices.dso.ae/" target="_blank">#Website</a>
+                            </div>
+                        </div>
+                        <div class="project__card__footer">
+                            <p class="project__card__extra">Sr. Developer</p>
+                            <p class="project__card__extra">DSOA (Dubai)</p>
+                        </div>
+                    </div>
+                    <div class="project__card project__batchframework">
+                        <div class="project__card__header">
+                            <h4 class="project__card__title">Batch Framework (UGL)</h4>
+                        </div>
+                        <div class="project__card__body">
+                            <p class="project__card__description">
+                                Batch Framework performs partition of batches, jobs, activities and its actions with optimizal performance using parallel processing. Have custom Supervisor-Worker Node Cluster mechanism. Fully handled failures and compensation tasks.
+                            </p>
+                        </div>
+                        <div class="project__card__footer">
+                            <p class="project__card__extra">Jr. Developer</p>
+                            <p class="project__card__extra">UGL Limited (Australia)</p>
+                        </div>
+                    </div>
+                    <div class="project__card project__agl">
+                        <div class="project__card__header">
+                            <h4 class="project__card__title">AGL</h4>
+                        </div>
+                        <div class="project__card__body">
+                            <p class="project__card__description">
+                                Support and Maintenance of Australian Gas Light (AGL) Energy Ltd Legacy applications on AGL Energy, Weather, Forecasting, Electricity, Hydro, Gas, Risk Management, and Pricing Engine etc.
+                            </p>
+                            <br/>
+                            <div class="project__card__links">
+                                <a href="https://www.agl.com.au/" target="_blank">#Website</a>
+                            </div>
+                        </div>
+                        <div class="project__card__footer">
+                            <p class="project__card__extra">Jr. Developer</p>
+                            <p class="project__card__extra">AGL (Australia)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work-section" id="work-section">
+            <div class="work-section-background">
+                <svg data-name="Work Section Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="section-content work-section-content">
+                <div class="work__title">
+                    <span class="section__title work__title__name">
+                        WORK
+                    </span>
+                </div>
+                <div class="work__content">
+                    <div class="work__content__details">
+                        <p>7+ years of experience in IT Industry covering end to end implementations from software development to consultation. Worked across multiple domains like Banking, Manufacturing, Utilities, Retail, Government, Hi-Tech, and Health Care.</p>
+                        <br/>
+                        <P class="text-decoration-underline">Primary skillset in Microsoft Azure, DevOps, Microservices & Full Stack Cloud Development.</P>
+                        <br/>   
+                        <p>Implemented and delivered projects in Agile, Scrum and Waterfall methodologies.</p>
+                        <br/>
+                        <p>Lead team to implementation Cloud Cost Optimization IP Safe and Centralized RBAC System with Microservices Architecture using latest Microsoft Technologies in Agile methodology.</p>
+                        <br/>
+                        <p>Created reusable components on Azure Components, NuGet Packages Libraries, Web & API Project and Solution Templates, and Architecture & Coding Standards documents etc.</p>
+                        <div class="work__content__qualities">
+                            <div class="work__content__roles">
+                                <div class="work__content__qualities__title work__content__roles__title">Roles</div>
+                                <ul>
+                                    <li>Technical Architect</li>
+                                    <li>Technical/Team Lead</li>
+                                    <li>Presales Consultant</li>
+                                    <li>Sr. Full Stack Developer</li>
+                                    <li>Training Mentor</li>
+                                </ul>
+                            </div>
+                            <div class="work__content__locations">
+                                <div class="work__content__qualities__title work__content__locations__title">Locations</div>
+                                <ul>
+                                    <li>Melbourne</li>
+                                    <li>Singapore</li>
+                                    <li>Bangalore</li>
+                                    <li>Hyderabad</li>
+                                    <li>Kolkata</li>
+                                    <li>Kochi</li>
+                                    <li>Chennai</li>
+                                    <li>Pune etc.</li>
+                                </ul>
+                            </div>
+                            <div class="work__content__skills">
+                                <div class="work__content__qualities__title work__content__skills__title">Personal Skills</div>
+                                <ul>
+                                    <li>Self Motivation</li>
+                                    <li>Team Work</li>
+                                    <li>Problem Solving</li>
+                                    <li>Leadership</li>
+                                    <li>Flexible/Adaptable</li>
+                                    <li>Decision Making</li>
+                                </ul>
+                            </div>
+                            <div class="work__content__awards">
+                                <div class="work__content__qualities__title work__content__awards__title">Awards</div>
+                                <ul>
+                                    <li>Pillar of the Unit</li>
+                                    <li>Best/Star Team</li>
+                                    <li>Innovator</li>
+                                    <li>Problem Solver</li>
+                                    <li>On The Spot Award</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills-section" id="skills-section">
+            <div class="skills-section-background">
+                <svg data-name="Skills Section Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="section-content skills-section-content">
+                <div class="skills__title">
+                    <span class="section__title skills__title__name">
+                        SKILLS
+                    </span>
+                </div>
+                <div class="skills__progress__badges">
+                    <div class="skills__progress__badge">
+                        <div class="skills__progress skills__progress__html">
+                            <div class="skills__progress__value"></div>
+                        </div>
+                        <div class="skills__badge">
+                            <div class="skills__badge__title">
+                                HTML
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__progress__badge">
+                        <div class="skills__progress  skills__progress__css">
+                            <div class="skills__progress__value"></div>
+                        </div>
+                        <div class="skills__badge">
+                            <div class="skills__badge__title">
+                                CSS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__progress__badge">
+                        <div class="skills__progress  skills__progress__js-jquery">
+                            <div class="skills__progress__value"></div>
+                        </div>
+                        <div class="skills__badge">
+                            <div class="skills__badge__title">
+                                JS / jQuery
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__progress__badge">
+                        <div class="skills__progress  skills__progress__dotnet-csharp">
+                            <div class="skills__progress__value"></div>
+                        </div>
+                        <div class="skills__badge">
+                            <div class="skills__badge__title">
+                                .Net / C#
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__progress__badge">
+                        <div class="skills__progress  skills__progress__sql">
+                            <div class="skills__progress__value"></div>
+                        </div>
+                        <div class="skills__badge">
+                            <div class="skills__badge__title">
+                                SQL
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__progress__badge">
+                        <div class="skills__progress  skills__progress__ms-azure">
+                            <div class="skills__progress__value"></div>
+                        </div>
+                        <div class="skills__badge">
+                            <div class="skills__badge__title">
+                                Microsoft Azure
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__progress__badge">
+                        <div class="skills__progress  skills__progress__devops">
+                            <div class="skills__progress__value"></div>
+                        </div>
+                        <div class="skills__badge">
+                            <div class="skills__badge__title">
+                                DevOps
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__progress__badge">
+                        <div class="skills__progress  skills__progress__microservices">
+                            <div class="skills__progress__value"></div>
+                        </div>
+                        <div class="skills__badge">
+                            <div class="skills__badge__title">
+                                Microservices
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__progress__badge">
+                        <div class="skills__progress  skills__progress__docker">
+                            <div class="skills__progress__value"></div>
+                        </div>
+                        <div class="skills__badge">
+                            <div class="skills__badge__title">
+                                Docker
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__progress__badge">
+                        <div class="skills__progress  skills__progress__kubernetes">
+                            <div class="skills__progress__value"></div>
+                        </div>
+                        <div class="skills__badge">
+                            <div class="skills__badge__title">
+                                Kubernetes
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__progress__badge">
+                        <div class="skills__progress  skills__progress__api">
+                            <div class="skills__progress__value"></div>
+                        </div>
+                        <div class="skills__badge">
+                            <div class="skills__badge__title">
+                                API
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__progress__badge">
+                        <div class="skills__progress  skills__progress__angular">
+                            <div class="skills__progress__value"></div>
+                        </div>
+                        <div class="skills__badge">
+                            <div class="skills__badge__title">
+                                Angular
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__progress__badge">
+                        <div class="skills__progress  skills__progress__react">
+                            <div class="skills__progress__value"></div>
+                        </div>
+                        <div class="skills__badge">
+                            <div class="skills__badge__title">
+                                React
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__progress__badge">
+                        <div class="skills__progress  skills__progress__cybersecurity">
+                            <div class="skills__progress__value"></div>
+                        </div>
+                        <div class="skills__badge">
+                            <div class="skills__badge__title">
+                                Cyber Security
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__progress__badge">
+                        <div class="skills__progress  skills__progress__agile">
+                            <div class="skills__progress__value"></div>
+                        </div>
+                        <div class="skills__badge">
+                            <div class="skills__badge__title">
+                                Agile
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__progress__badge">
+                        <div class="skills__progress  skills__progress__visualstudio">
+                            <div class="skills__progress__value"></div>
+                        </div>
+                        <div class="skills__badge">
+                            <div class="skills__badge__title">
+                                Visual Studio
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__progress__badge">
+                        <div class="skills__progress  skills__progress__vscode">
+                            <div class="skills__progress__value"></div>
+                        </div>
+                        <div class="skills__badge">
+                            <div class="skills__badge__title">
+                                VS Code
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__progress__badge">
+                        <div class="skills__progress  skills__progress__msoffice">
+                            <div class="skills__progress__value"></div>
+                        </div>
+                        <div class="skills__badge">
+                            <div class="skills__badge__title">
+                                Microsoft Office
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__progress__badge">
+                        <div class="skills__progress  skills__progress__admin-tools">
+                            <div class="skills__progress__value"></div>
+                        </div>
+                        <div class="skills__badge">
+                            <div class="skills__badge__title">
+                                Admin Tools
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-section" id="about-section">
+            <div class="about-section-background">
+                <svg data-name="About Section Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="section-content about-section-content">
+                <div class="about__title">
+                    <span class="section__title about__title__name">
+                        ABOUT ME
+                    </span>
+                </div>
+                <div class="about__content">
+                    <div class="about__content__details">
+                        <p>Hello, I'm Nayan from India. Working as Technical Lead in TCS.</p>
+                        <br/>
+                        <p>Interested in Futuristic Technologies and Sci-Fi stuff.</p>
+                        <br/>
+                        <p>From my perspective, Technology is neither Good, Bad or Neutral, it's the way we decide to use it.</p>
+                        <br/>
+                        <div class="about__content__qualities">
+                            <div class="about__content__hobbies">
+                                <div class="about__content__qualities__title about__content__hobbies__title">Hobbies</div>
+                                <ul>
+                                    <li>Surfing Internet</li>
+                                    <li>Watching TV</li>
+                                    <li>Helping @ Home</li>
+                                </ul>
+                            </div>
+                            <div class="about__content__strengths">
+                                <div class="about__content__qualities__title about__content__strengths__title">Strengths</div>
+                                <ul>
+                                    <li>Self Motivation</li>
+                                    <li>Hard Work</li>
+                                    <li>Adaptable</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__content__connect">
+                        <div class="about__content__connect__form form hidden">
+                            <div class="about__content__connect__form__header form__header">
+                                <h3 class="form__title">Contact Me</h3>
+                                <span class="form__close" onclick="toggleContactForm();">&#x2715;</span>
+                            </div>
+                            <div class="about__content__connect__form__body form__body">
+                                <input type="text" class="form__name" value="" placeholder="Name*" />
+                                <input type="text" class="form__email" value="" placeholder="Email*" />
+                                <input type="text" class="form__subject" value="" placeholder="Subject" />
+                                <textarea rows="5" class="form__message no-resize" value="" placeholder="Message"></textarea>
+                            </div>
+                            <div class="about__content__connect__form__footer form__footer">
+                                <button type="button"class="form__button form__send">Send</button>
+                            </div>
+                            
+                        </div>
+                        <div>
+                            <button type="button" class="form__contact__button glow-on-hover" onclick="toggleContactForm();">Contact Me</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="footer-background">
+                <div class="wave wave1"></div>
+                <div class="wave wave2"></div>
+                <div class="wave wave3"></div>
+                <div class="wave wave4"></div>
+            </div>
+            <div class="footer-content">
+                <div class="footer__socialmedia">
+                    <a href="https://discordapp.com/users/Nayan#4740" class="social__media" target="_blank" title="Discord">
+                        <i class="fa-brands fa-discord social__media__discord"></i>
+                    </a>
+                    <a href="https://github.com/nayanbunny" class="social__media" target="_blank" title="Github">
+                        <i class="fa-brands fa-github social__media__github"></i> 
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCjHJdASGzZ7zxaGXtA02gtw" class="social__media" target="_blank" title="Youtube">
+                        <i class="fa-brands fa-youtube social__media__youtube"></i>
+                    </a>
+                </div>
+                <div class="footer__copyright">
+                    <span class="footer__copyright__title">Copyrights @ 2022 Nayan. All rights reserved.</span>
+                </div>
+            </div>
+        </footer>
+
+        <aside class="scroll__progress">
+            <div id="scroll__progress">
+                <span id="scroll__progress__value">&#129045;</span>
+            </div>
+        </aside>
+
+        <script src="js/vanilla-tilt.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.1.3/circle-progress.min.js" type="text/javascript" crossorigin="anonymous"></script>
+        <script src="js/script.js" type="text/javascript"></script>
+    </body>
+</html>
