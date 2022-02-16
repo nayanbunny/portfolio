@@ -896,7 +896,7 @@ section {
     width: 12rem;
     height: 4rem;
     border-radius: 0 8px 8px 0;
-    margin-left: -0.5rem;
+    margin-left: -0.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1107,6 +1107,7 @@ footer {
 footer .footer-content {
     z-index: 9999;
     text-align: center;
+    font-size: 1rem;
 }
 footer .footer__socialmedia {
     margin: 1rem;
@@ -1453,6 +1454,18 @@ footer .wave.wave4 {
         -webkit-transform: translate(250%, -400%);
         transform: translate(250%, -400%);
     }
+    .work-section .work-section-content p,
+    .about-section .about-section-content p,
+    .work-section .work-section-content .work__content .work__content__qualities ul li,
+    .about-section .about-section-content .about__content .about__content__qualities ul li {
+        font-size: 1.25rem;
+    }
+    footer .footer-content {
+        font-size: 0.75rem;
+    }
+    .social__media {
+        font-size: 3rem;
+    }
 }
 @media only screen and (max-width: 960px) { 
     .form {
@@ -1460,7 +1473,7 @@ footer .wave.wave4 {
     }
     .form input, .form textarea {
         width: 22rem;
-    }
+    }    
 }
 @media only screen and (max-width: 840px) {
     .hero-section .hero-section-background .hero__section__background__bubbles .hero__section__background__bubble1 {
@@ -1483,6 +1496,19 @@ footer .wave.wave4 {
         -ms-transform: translate(150%, -400%);
         -webkit-transform: translate(150%, -400%);
         transform: translate(150%, -400%);
+    }
+    .hero-section .hero-section-content .hero__greeting {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .hero-section .hero-section-content .hero__greeting .hero__greeting__icon {
+        font-size: 3.5rem;
+    }
+    .hero-section .hero-section-content .hero__title .hero__title__name {
+        font-size: 6rem;
+    }
+    .hero-section .hero-section-content .hero__subtitle {
+        font-size: 1.5rem;
     }
     .projects-section .projects-section-content::before {
         height: 30%;
@@ -1585,14 +1611,20 @@ footer .wave.wave4 {
         transform: translate(100%, -400%);
     }
     .hero-section .hero-section-content .hero__greeting {
-        font-size: 2rem;
+        font-size: 1.75rem;
         text-align: center;
     }
+    .hero-section .hero-section-content .hero__greeting .hero__greeting__icon {
+        font-size: 3.25rem;
+    }
+    .hero-section .hero-section-content .hero__title .hero__title__pre {
+        font-size: 1.75rem;
+    }
     .hero-section .hero-section-content .hero__title .hero__title__name {
-        font-size: 6rem;
+        font-size: 5rem;
     }
     .hero-section .hero-section-content .hero__subtitle {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     section {
         padding: 7.5rem 2rem;
@@ -1615,18 +1647,75 @@ footer .wave.wave4 {
         -webkit-clip-path: circle(28% at center 50%);
         clip-path: circle(28% at center 50%);
     }
+    .about-section .about-section-content .about__content .about__content__connect button {
+        font-size: 1.5rem;
+        padding: 1.5rem 5rem;
+    }
+    .work-section .work-section-content p,
+    .about-section .about-section-content p,
+    .work-section .work-section-content .work__content .work__content__qualities ul li,
+    .about-section .about-section-content .about__content .about__content__qualities ul li {
+        font-size: 1rem;
+    }
+    .work-section .work-section-content .work__content .work__content__qualities > div,
+    .about-section .about-section-content .about__content .about__content__qualities > div {
+        margin: 1.25rem;
+    }
+    .skills-section .skills-section-content .skills__content,
+    .work-section .work-section-content .work__content,
+    .about-section .about-section-content .about__content {
+        padding: 2rem 0;
+    }
+    .work-section .work-section-content .work__content .work__content__qualities .work__content__qualities__title,
+    .about-section .about-section-content .about__content .about__content__qualities .about__content__qualities__title {
+        font-size: 1.75rem;
+		margin: 1.25rem;
+    }
+    footer .footer-content {
+        font-size: 0.65rem;
+    }
     .form {
         width: 25rem;
     }
     .form input, .form textarea {
         width: 20rem;
     }
-    .about-section .about-section-content .about__content .about__content__connect button {
-        font-size: 1.5rem;
-        padding: 1.5rem 5rem;
+    .social__media {
+        font-size: 2.5rem;
+    }
+	.text-decoration-underline {
+		font-weight: bold;
+        text-decoration: none;
+        background-color: #004646;
+        -moz-background-clip: text;
+        -o-background-clip: text;
+        -ms-background-clip: text;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -moz-text-fill-color: transparent;
+        -o-text-fill-color: transparent;
+        -ms-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
     }
 }
 @media only screen and (max-width: 680px) {
+    .hero-section .hero-section-content .hero__greeting {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .hero-section .hero-section-content .hero__greeting .hero__greeting__icon {
+        font-size: 2.5rem;
+    }
+    .hero-section .hero-section-content .hero__title .hero__title__pre {
+        font-size: 1.5rem;
+    }
+    .hero-section .hero-section-content .hero__title .hero__title__name {
+        font-size: 4.5rem;
+    }
+    .hero-section .hero-section-content .hero__subtitle {
+        font-size: 1.25rem;
+    }
     .about-section .about-section-content::before {
         -moz-clip-path: circle(22% at center 50%);
         -o-clip-path: circle(22% at center 50%);
@@ -1637,6 +1726,33 @@ footer .wave.wave4 {
     .about-section .about-section-content::after {
         height: 30%;
     }
+    footer .footer-content {
+        font-size: 0.5rem;
+    }
+    .form {
+        width: 20rem;
+        margin: 1rem 0.5rem;
+    }
+    .form input, .form textarea {
+        width: 16rem;
+        font-size: 0.75rem;
+        margin: 1rem;
+    }
+    .form .form__title {
+        font-size: 1.5rem;
+    }
+    .form .form__connect__button,
+    .form .form__button {
+        font-size: 1rem !important;
+        padding: 1rem 4rem !important;
+    }
+    .about-section .about-section-content .about__content .about__content__connect button {
+        font-size: 1.5rem;
+        padding: 1.5rem 5rem;
+    }
+    .social__media {
+        font-size: 2rem;
+    }
 }
 @media only screen and (max-width: 480px) {
     section {
@@ -1646,6 +1762,22 @@ footer .wave.wave4 {
         padding: 2rem 0;
         font-size: 2rem;
     }
+    .hero-section .hero-section-content .hero__greeting {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    .hero-section .hero-section-content .hero__greeting .hero__greeting__icon {
+        font-size: 2.25rem;
+    }
+    .hero-section .hero-section-content .hero__title .hero__title__pre {
+        font-size: 1.5rem;
+    }
+    .hero-section .hero-section-content .hero__title .hero__title__name {
+        font-size: 4.5rem;
+    }
+    .hero-section .hero-section-content .hero__subtitle {
+        font-size: 1.25rem;
+    }
     .projects-section .projects-section-content::before {
         height: 22%;
     }
@@ -1654,6 +1786,39 @@ footer .wave.wave4 {
     }
     .projects-section .projects-section-background {
         top: -0.3rem;
+    }
+    .skills-section .skills-section-content .skills__progress__badges .skills__progress__badge {
+        width: 14rem;
+        height: 3.75rem;
+    }
+    .skills-section .skills-section-content .skills__progress__badges .skills__progress__badge .skills__progress {
+        width: 6rem;
+        height: 6rem;
+        padding: 0.75rem;
+    }
+    .skills-section .skills-section-content .skills__progress__badges .skills__progress__badge .skills__progress .skills__progress__value {
+        width: 4rem;
+        height: 4rem;
+        font-size: 1rem;
+    }
+    .skills-section .skills-section-content .skills__progress__badges .skills__progress__badge .skills__progress canvas{
+        width: 93px;
+        height: 93px;
+    }
+    .skills-section .skills-section-content .skills__progress__badges .skills__progress__badge .skills__badge {
+        width: 9rem;
+        height: 3rem;
+    }
+    .skills-section .skills-section-content .skills__progress__badges .skills__progress__badge .skills__badge .skills__badge__title {
+        font-size: 0.75rem;
+    }
+    .work-section .work-section-content .work__content .work__content__qualities > div,
+    .about-section .about-section-content .about__content .about__content__qualities > div {
+        margin: 1rem;
+    }
+    .work-section .work-section-content .work__content .work__content__qualities .work__content__qualities__title,
+    .about-section .about-section-content .about__content .about__content__qualities .about__content__qualities__title {
+        font-size: 1.5rem;
     }
     .about-section .about-section-content::before {
         -moz-clip-path: circle(20% at center 50%);
@@ -1670,13 +1835,49 @@ footer .wave.wave4 {
         padding: 1rem 4rem;
     }
     .form {
-        width: 22rem;
+        width: 16rem;
+        margin: 1rem 0.5rem;
     }
     .form input, .form textarea {
-        width: 18rem;
+        width: 14rem;
+        font-size: 0.5rem;
+        margin: 1rem;
     }
+    .form .form__title {
+        font-size: 1rem;
+    }
+    .form .form__connect__button,
     .form .form__button {
         font-size: 1rem !important;
         padding: 1rem 4rem !important;
+    }
+    .social__media {
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 360px) {
+	.hero-section .hero-section-content .hero__greeting {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .hero-section .hero-section-content .hero__greeting .hero__greeting__icon {
+        font-size: 2rem;
+    }
+    .hero-section .hero-section-content .hero__title .hero__title__pre {
+        font-size: 1rem;
+    }
+    .hero-section .hero-section-content .hero__title .hero__title__name {
+        font-size: 4rem;
+    }
+    .hero-section .hero-section-content .hero__subtitle {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 320px) {
+    html, body {
+        overflow-x: visible;
+    }
+    .hero-section .hero-section-background .hero__section__background__bubbles .hero__section__background__bubble3 {
+        display: none;
     }
 }

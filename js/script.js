@@ -6,7 +6,6 @@ let calcScrollValue = () => {
   let calcScrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   let scrollValue = Math.round((scrollPosition*100)/calcScrollHeight);
   
-  console.log(scrollPosition, scrollValue, window.scrollY);
   document.querySelector('header').classList.toggle('sticky', window.scrollY > 10);
 
   scrollProgress.style.display = scrollPosition > 100 ? 'grid' : 'none';
