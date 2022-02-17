@@ -858,6 +858,7 @@ section {
     border-radius: 50%;
     z-index: 1;
     padding: 1rem;
+	position: relative;	
     backdrop-filter: blur(2rem);
     box-shadow: -3px -3px 4px 1px rgb(255,255,255,0.4), 4px 5px 4px 2px rgb(0,0,0,0.4);
 }
@@ -871,7 +872,7 @@ section {
     justify-content: center;
     align-items: center;
     color: white;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     -moz-transform: translate(-50%, -50%);
