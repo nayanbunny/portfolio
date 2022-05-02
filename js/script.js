@@ -15,6 +15,11 @@ let calcScrollValue = () => {
   scrollProgress.style.background = `conic-gradient(#006c6c ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
 }
 
+let toggleCertificationBadges = () => {
+  $('.certification__badges').toggleClass('active');
+}
+
+
 /* TypeWriter for Legacy Versions
 // const TypeWriter = function(txtElement, words, wait=1000){
 //     this.txtElement = txtElement;
@@ -153,24 +158,24 @@ let skillsCircleProgress = () => {
   });
 
   var skillsProgress = [
-    { name: 'css', value: '0.87', color: '#254bdd' },
-    { name: 'js-jquery', value: '0.82', color: '#edd718' },
-    { name: 'dotnet-csharp', value: '0.86', color: '#5d2d92' },
+    { name: 'css', value: '0.90', color: '#254bdd' },
+    { name: 'js-jquery', value: '0.86', color: '#edd718' },
+    { name: 'dotnet-csharp', value: '0.84', color: '#5d2d92' },
     { name: 'sql', value: '0.68', color: '#aec92f' },
-    { name: 'ms-azure', value: '0.74', color: '#2463cb' },
+    { name: 'ms-azure', value: '0.78', color: '#2463cb' },
     { name: 'devops', value: '0.72', color: '#0072cf' },
     { name: 'microservices', value: '0.68', color: '#008e36' },
     { name: 'docker', value: '0.68', color: '#3069de' },
     { name: 'kubernetes', value: '0.62', color: '#3069de' },
-    { name: 'api', value: '0.77', color: '#20b199' },
+    { name: 'api', value: '0.81', color: '#20b199' },
     { name: 'python', value: '0.65', color: '#ffd141' },
     { name: 'ml', value: '0.47', color: '#3f319f' },
     { name: 'angular', value: '0.56', color: '#af2b2d' },
     { name: 'react', value: '0.33', color: '#5ed3f3' },
     { name: 'cybersecurity', value: '0.35', color: '#833850' },
-    { name: 'agile', value: '0.57', color: '#4548b8' },
-    { name: 'visualstudio', value: '0.57', color: '#61218c' },
-    { name: 'vscode', value: '0.64', color: '#3ca5ea' },
+    { name: 'agile', value: '0.65', color: '#4548b8' },
+    { name: 'visualstudio', value: '0.72', color: '#61218c' },
+    { name: 'vscode', value: '0.68', color: '#3ca5ea' },
     { name: 'msoffice', value: '0.72', color: '#dc4602' },
     { name: 'admin-tools', value: '0.57', color: '#7776a6' }
 
@@ -332,9 +337,10 @@ let initializeScrollTrigger = () => {
     ScrollTrigger.create({
       trigger: elem,
       onEnter: function() { gsapSlideRevealAnimation(elem) },
-      onEnterBack: function() { gsapSlideRevealAnimation(elem, -1) },
-      onLeave: function() { hide(elem) }, // assure that the element is hidden when scrolled into view
-      onLeaveBack: function() { hide(elem) } // assure that the element is hidden when scrolled into view
+      // onEnterBack: function() { gsapSlideRevealAnimation(elem, -1) },
+      // onLeave: function() { hide(elem) }, // assure that the element is hidden when scrolled into view
+      // onLeaveBack: function() { hide(elem) } // assure that the element is hidden when scrolled into view
+      once: true
     });
   });
 
@@ -343,36 +349,40 @@ let initializeScrollTrigger = () => {
     interval: 0.01, // time window (in seconds) for batching to occur. The first callback that occurs (of its type) will start the timer, and when it elapses, any other similar callbacks for other targets will be batched into an array and fed to the callback. Default is 0.1
     batchMax: 3,   // maximum batch size (targets)
     onEnter: batch => gsap.to(batch, {autoAlpha: 1, stagger: 0.15, overwrite: true}),
-    onLeave: batch => gsap.set(batch, {autoAlpha: 0, overwrite: true}),
-    onEnterBack: batch => gsap.to(batch, {autoAlpha: 1, stagger: 0.15, overwrite: true}),
-    onLeaveBack: batch => gsap.set(batch, {autoAlpha: 0, overwrite: true})
+    // onLeave: batch => gsap.set(batch, {autoAlpha: 0, overwrite: true}),
+    // onEnterBack: batch => gsap.to(batch, {autoAlpha: 1, stagger: 0.15, overwrite: true}),
+    // onLeaveBack: batch => gsap.set(batch, {autoAlpha: 0, overwrite: true})
+    once: true
   });
 
   // Scroll Trigger for Work Section
   ScrollTrigger.create({
     trigger: workElement,
     onEnter: function() { workContentAnimation() },
-    onEnterBack: function() { workContentAnimation() },
-    onLeave: function() { hide(workElement) }, // assure that the element is hidden when scrolled into view
-    onLeaveBack: function() { hide(workElement) }, // assure that the element is hidden when scrolled into view
+    // onEnterBack: function() { workContentAnimation() },
+    // onLeave: function() { hide(workElement) }, // assure that the element is hidden when scrolled into view
+    // onLeaveBack: function() { hide(workElement) }, // assure that the element is hidden when scrolled into view
+    once: true
   });
 
   // Scroll Trigger for Skills Section
   ScrollTrigger.create({
     trigger: skillsElement,
     onEnter: function() { skillsCircleProgress() },
-    onEnterBack: function() { skillsCircleProgress() },
-    onLeave: function() { hide(skillsElement) }, // assure that the element is hidden when scrolled into view
-    onLeaveBack: function() { hide(skillsElement) }, // assure that the element is hidden when scrolled into view
+    // onEnterBack: function() { skillsCircleProgress() },
+    // onLeave: function() { hide(skillsElement) }, // assure that the element is hidden when scrolled into view
+    // onLeaveBack: function() { hide(skillsElement) }, // assure that the element is hidden when scrolled into view
+    once: true
   });
 
   // Scroll Trigger for About Section
   ScrollTrigger.create({
     trigger: aboutElement,
     onEnter: function() { aboutContentAnimation() },
-    onEnterBack: function() { aboutContentAnimation() },
-    onLeave: function() { hide(aboutElement) }, // assure that the element is hidden when scrolled into view
-    onLeaveBack: function() { hide(aboutElement) }, // assure that the element is hidden when scrolled into view
+    // onEnterBack: function() { aboutContentAnimation() },
+    // onLeave: function() { hide(aboutElement) }, // assure that the element is hidden when scrolled into view
+    // onLeaveBack: function() { hide(aboutElement) }, // assure that the element is hidden when scrolled into view
+    once: true
   });
 }
 

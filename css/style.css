@@ -47,8 +47,7 @@ header .navbar .navbar__logo * {
   font-size: 1.5rem;
   font-weight: bold;
   color: #ffffff;
-  text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
-    0 0 80px #03bcf4;
+  text-shadow: 0 0 5px #03bcf4, 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4;
   animation: glow 1s linear;
 }
 
@@ -76,8 +75,7 @@ header .navbar .navbar__logo * {
   92.1%,
   100% {
     color: #ffffff;
-    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
-      0 0 80px #03bcf4;
+    text-shadow: 0 0 5px #03bcf4, 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4;
   }
 }
 header .navbar .navbar__links {
@@ -752,7 +750,7 @@ section {
   a {
   font-size: 1rem;
   font-weight: bold;
-  color: #3d0d5e;
+  color: #10146e;
 }
 .projects-section
   .projects-section-content
@@ -761,6 +759,14 @@ section {
   .project__card__links
   a:hover {
   text-decoration: underline;
+}
+.projects-section
+  .projects-section-content
+  .projects__cards
+  .project__card
+  .project__card__links
+  a:visited {
+  color: #3d0d5e;
 }
 .projects-section
   .projects-section-content
@@ -1213,13 +1219,13 @@ section {
     #ff0000
   );
   position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
+  top: 0;
+  left: 0;
+  background-size: 500%;
   z-index: -1;
-  filter: blur(1rem);
-  width: calc(100% + 0.25rem);
-  height: calc(100% + 0.25rem);
+  filter: blur(2rem);
+  width: calc(100% - 0.25rem);
+  height: calc(100% - 0.25rem);
   border-radius: 0.25rem;
   opacity: 0;
   -moz-animation: glowing 20s linear infinite;
@@ -1352,6 +1358,73 @@ footer .wave.wave4 {
   100% {
     background-position-x: 65rem;
   }
+}
+
+/* Certificaton Badges Styles */
+.certification__badge {
+  position: fixed;
+  bottom: 50%;
+  left: 0.75rem;
+  height: 5rem;
+  width: 5rem;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  z-index: 10000;
+}
+.certificate__icon {
+  width: 5rem;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+.certificate__item__icon {
+  width: 0;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.certification__badges.active .certificate__icon {
+  width: 4rem;
+}
+.certification__badges.active .certificate__item__icon {
+  width: 5rem;
+}
+.certification__badges.active .certification__badge__item {
+  left: 7rem;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.certification__badges.active .certification__badge__item:first-child {
+  bottom: 60%;
+  left: 4rem;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.certification__badges.active .certification__badge__item:last-child {
+  bottom: 40%;
+  left: 4rem;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
 /* Scroll To Top with Progress */
