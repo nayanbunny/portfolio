@@ -1361,6 +1361,15 @@ footer .wave.wave4 {
 }
 
 /* Certificaton Badges Styles */
+.certification__badges {
+  position: fixed;
+  bottom: 50%;
+  left: 0.75rem;
+  height: 5rem;
+  width: 5rem;
+  place-items: center;
+  z-index: 10000;
+}
 .certification__badge {
   position: fixed;
   bottom: 50%;
@@ -1375,7 +1384,6 @@ footer .wave.wave4 {
   -ms-transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
-  z-index: 10000;
 }
 .certificate__icon {
   width: 5rem;
@@ -1385,6 +1393,9 @@ footer .wave.wave4 {
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
   cursor: pointer;
+}
+.certification__badge__item {
+  left: 3rem;
 }
 .certificate__item__icon {
   width: 0;
