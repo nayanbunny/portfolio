@@ -1396,6 +1396,7 @@ footer .wave.wave4 {
 }
 .certification__badge__item {
   left: 3rem;
+  bottom: 50%;
 }
 .certificate__item__icon {
   width: 0;
@@ -1411,31 +1412,41 @@ footer .wave.wave4 {
 .certification__badges.active .certificate__item__icon {
   width: 5rem;
 }
-.certification__badges.active .certification__badge__item {
-  left: 7rem;
-  -moz-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
-  -ms-transition: all 300ms ease-in-out;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-}
-.certification__badges.active .certification__badge__item:first-child {
-  bottom: 60%;
-  left: 4rem;
+.certification__badges.active .certification__badges__list .icon-az-900.certification__badge__item {
+  bottom: 62%;
+  left: 1rem;
   -moz-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
   -ms-transition: all 200ms ease-in-out;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
-.certification__badges.active .certification__badge__item:last-child {
-  bottom: 40%;
-  left: 4rem;
+.certification__badges.active .certification__badges__list .icon-az-104.certification__badge__item {
+  bottom: 56%;
+  left: 5rem;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.certification__badges.active .certification__badges__list .icon-az-305.certification__badge__item {
+  bottom: 46%;
+  left: 5rem;
   -moz-transition: all 400ms ease-in-out;
   -o-transition: all 400ms ease-in-out;
   -ms-transition: all 400ms ease-in-out;
   -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
+}
+.certification__badges.active .certification__badges__list .icon-dp-900.certification__badge__item {
+  bottom: 40%;
+  left: 1rem;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 /* Scroll To Top with Progress */
