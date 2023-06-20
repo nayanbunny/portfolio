@@ -148,7 +148,7 @@ let skillsCircleProgress = () => {
     startAngle: -1.55,
     size: 110,
     thickness: 15,
-    value: 0.92,
+    value: 0.95,
     fill: { color: '#dd4b25' }
   }
 
@@ -158,26 +158,26 @@ let skillsCircleProgress = () => {
   });
 
   var skillsProgress = [
-    { name: 'css', value: '0.90', color: '#254bdd' },
-    { name: 'js-jquery', value: '0.86', color: '#edd718' },
-    { name: 'dotnet-csharp', value: '0.84', color: '#5d2d92' },
-    { name: 'sql', value: '0.68', color: '#aec92f' },
-    { name: 'ms-azure', value: '0.78', color: '#2463cb' },
-    { name: 'devops', value: '0.72', color: '#0072cf' },
-    { name: 'microservices', value: '0.68', color: '#008e36' },
-    { name: 'docker', value: '0.68', color: '#3069de' },
-    { name: 'kubernetes', value: '0.62', color: '#3069de' },
-    { name: 'api', value: '0.81', color: '#20b199' },
-    { name: 'python', value: '0.65', color: '#ffd141' },
+    { name: 'css', value: '0.91', color: '#254bdd' },
+    { name: 'js-jquery', value: '0.88', color: '#edd718' },
+    { name: 'dotnet-csharp', value: '0.87', color: '#5d2d92' },
+    { name: 'sql', value: '0.72', color: '#aec92f' },
+    { name: 'ms-azure', value: '0.82', color: '#2463cb' },
+    { name: 'devops', value: '0.76', color: '#0072cf' },
+    { name: 'microservices', value: '0.72', color: '#008e36' },
+    { name: 'docker', value: '0.72', color: '#3069de' },
+    { name: 'kubernetes', value: '0.70', color: '#3069de' },
+    { name: 'api', value: '0.87', color: '#20b199' },
+    { name: 'python', value: '0.74', color: '#ffd141' },
     { name: 'ml', value: '0.47', color: '#3f319f' },
-    { name: 'angular', value: '0.56', color: '#af2b2d' },
-    { name: 'react', value: '0.33', color: '#5ed3f3' },
-    { name: 'cybersecurity', value: '0.35', color: '#833850' },
-    { name: 'agile', value: '0.65', color: '#4548b8' },
-    { name: 'visualstudio', value: '0.72', color: '#61218c' },
-    { name: 'vscode', value: '0.68', color: '#3ca5ea' },
-    { name: 'msoffice', value: '0.72', color: '#dc4602' },
-    { name: 'admin-tools', value: '0.57', color: '#7776a6' }
+    { name: 'angular', value: '0.65', color: '#af2b2d' },
+    { name: 'react', value: '0.47', color: '#5ed3f3' },
+    { name: 'cybersecurity', value: '0.39', color: '#833850' },
+    { name: 'agile', value: '0.72', color: '#4548b8' },
+    { name: 'visualstudio', value: '0.80', color: '#61218c' },
+    { name: 'vscode', value: '0.86', color: '#3ca5ea' },
+    { name: 'msoffice', value: '0.81', color: '#dc4602' },
+    { name: 'admin-tools', value: '0.65', color: '#7776a6' }
 
   ];
 
