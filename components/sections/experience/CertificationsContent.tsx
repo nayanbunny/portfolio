@@ -1,4 +1,5 @@
 import { certifications } from "@/data/experience";
+import { getAssetPath } from "@/lib/utils";
 
 
 export function CertificationsContent() {
@@ -15,7 +16,7 @@ export function CertificationsContent() {
           {/* Image */}
           <div className="flex items-center justify-center h-36">
             <img
-              src={certificate.image}
+              src={getAssetPath(certificate.image)}
               alt={certificate.title}
               className="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
             />
