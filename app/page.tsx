@@ -1,3 +1,6 @@
+'use client';
+
+
 // app/page.tsx
 import Section from "@/components/layouts/Section";
 import Container from "@/components/layouts/Container";

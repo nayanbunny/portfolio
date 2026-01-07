@@ -31,7 +31,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Nayan",
   description: "Personal portfolio showcasing experience, projects, skills, and about.",
-  icons: { icon: "/favicon.ico" },
+  icons: { icon: "/favicon.ico" }, // Next.js will resolve this relative to metadataBase and handle basePath
   metadataBase: new URL("https://nayanbunny.github.io/portfolio"),
   openGraph: {
     title: "Nayan",

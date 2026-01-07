@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === "production";
+// Use a more reliable check for production builds
+// GitHub Actions may not always set NODE_ENV, so we check for CI environment too
+const isProd = process.env.NODE_ENV === "production" || process.env.CI === "true";
 
 const repoBase = "/portfolio";
 
