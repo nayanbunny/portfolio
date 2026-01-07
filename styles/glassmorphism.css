@@ -1,0 +1,35 @@
+/* Glass container */
+.glass {
+  background: oklch(0.95 0.02 270 / 0.07);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid oklch(0.95 0.02 270 / 0.05);
+  transition: background 0.4s, transform 0.4s, box-shadow 0.4s;
+}
+
+/* Inactive icon glass */
+.glass-icon {
+  background: oklch(0.95 0.02 270 / 0.05);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid oklch(0.95 0.02 270 / 0.08);
+  transition: background 0.4s, transform 0.4s, box-shadow 0.4s;
+  will-change: transform, background, box-shadow, opacity;
+}
+
+/* Hover for inactive icons */
+.glass-icon:hover {
+  background: oklch(0.95 0.02 270 / 0.12);
+}
+
+/* Active icon glass with accent background */
+.glass-icon-active {
+  background: var(--accent); /* use alpha in variable or inline */
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  box-shadow:
+    0 0 0 1px oklch(0.7 0.1 180 / 0.15),
+    0 8px 24px oklch(0 0 0 / 0.25);
+  transition: background 0.5s, transform 0.5s, box-shadow 0.5s;
+  will-change: transform, background, box-shadow, opacity;
+}

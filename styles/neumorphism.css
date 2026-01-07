@@ -1,0 +1,25 @@
+.neumorphic-glass {
+    background: oklch(40% 0 0 / 0.25); /* slightly darker glass */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid oklch(100% 0 0 / 0.05); /* subtle highlight border */
+
+  /* Soft dark mode neumorphic shadows */
+  box-shadow: 
+    4px 4px 12px oklch(0% 0 0 / 0.6),   /* soft dark shadow */
+    -4px -4px 12px oklch(100% 0 0 / 0.05); /* subtle light highlight */
+  }
+
+  .neumorphic-glass-inset {
+    background: oklch(60% 0 0 / 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid oklch(80% 0 0 / 0.1);
+  
+    box-shadow: 
+      inset 8px 8px 16px oklch(12% 0 0 / 0.5),   /* dark inside shadow */
+      inset -8px -8px 16px oklch(100% 0 0 / 0.1); /* light inside highlight */
+  }
+  
