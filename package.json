@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "postbuild": "echo 'Static export done'",
+    "deploy": "gh-pages -d out",
     "lint": "eslint"
   },
   "dependencies": {
