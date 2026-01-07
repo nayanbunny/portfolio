@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
+import { getAssetPath } from '@/lib/utils'
 
 type Particle = {
   left: string
@@ -93,7 +94,7 @@ export default function AvatarMorph() {
           transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
         >
           <img
-            src="/images/user.png"
+            src={getAssetPath("images/user.png")}
             alt="Professional Portrait"
             className="h-full w-full object-cover"
           />

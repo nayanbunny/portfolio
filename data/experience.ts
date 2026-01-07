@@ -54,22 +54,22 @@ export const experiences = [
 export const certifications = [
 	{
 		title: "Microsoft Certified: Azure Solutions Architect Expert",
-		image: "certs/az-305-solutions-architect.png",
+		image: "/certs/az-305-solutions-architect.png",
 		link: "https://learn.microsoft.com/api/credentials/share/en-gb/NayanCh/489B6F696583E4B1?sharingId=C4DBEB5E82571C1B",
 	},
 	{
 		title: "Microsoft Certified: Azure Administrator Associate",
-		image: "certs/az-104-administrator.png",
+		image: "/certs/az-104-administrator.png",
 		link: "https://learn.microsoft.com/api/credentials/share/en-gb/NayanCh/B7B3500C4BF83EE0?sharingId=C4DBEB5E82571C1B",
 	},
 	{
 		title: "Microsoft Certified: Azure Fundamentals",
-		image: "certs/az-900-fundamentals.png",
+		image: "/certs/az-900-fundamentals.png",
 		link: "https://www.credly.com/badges/df09149b-8051-4b9a-b920-1ad44db6f03d/public_url",
 	},
 	{
 		title: "Microsoft Certified: Azure Data Fundamentals",
-		image: "certs/dp-900-data-fundamentals.png",
+		image: "/certs/dp-900-data-fundamentals.png",
 		link: "https://www.credly.com/badges/2c843738-ac98-4df4-aca0-272c048134c3/public_url",
 	},
 ];

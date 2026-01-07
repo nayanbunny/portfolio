@@ -5,6 +5,7 @@ import "@/styles/glassmorphism.css";
 import "@/styles/neumorphism.css";
 
 import Navbar from "@/components/layouts/Navbar";
+import { BASE_PATH } from "@/lib/constants";
 
 
 const montserrat = Montserrat({
@@ -31,7 +32,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Nayan",
   description: "Personal portfolio showcasing experience, projects, skills, and about.",
-  icons: { icon: "/favicon.ico" }, // Next.js will resolve this relative to metadataBase and handle basePath
+  icons: { icon: `${BASE_PATH}/favicon.ico` }, // Include basePath for GitHub Pages
   metadataBase: new URL("https://nayanbunny.github.io/portfolio"),
   openGraph: {
     title: "Nayan",

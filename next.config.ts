@@ -10,7 +10,8 @@ const nextConfig: NextConfig = {
   /* config options here */
   output: 'export',
   basePath: isProd ? repoBase : "",
-  assetPrefix: isProd ? `${repoBase}/` : undefined,
+  // assetPrefix is not needed when using basePath with static export
+  // basePath automatically handles asset paths
   images: {
     unoptimized: true,
   },
