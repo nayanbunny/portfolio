@@ -70,7 +70,3 @@ portfolio/
 ## Deployment
 
 The site is automatically deployed to GitHub Pages via GitHub Actions on push to the `main` branch. The build process creates a static export optimized for GitHub Pages.
-
-## License
-
-Private project - All rights reserved.
