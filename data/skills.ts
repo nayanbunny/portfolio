@@ -54,21 +54,13 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     label: "AI & Emerging Tech",
     skills: [
       { name: "Generative AI", level: 80 },
-      { name: "Machine Learning", level: 75 },
-      { name: "AR / VR", level: 65 },
-      { name: "Quantum Computing", level: 20 },
-      { name: "Responsible Innovation", level: 75 },
+      { name: "Machine Learning", level: 70 },
+      { name: "AR / VR", level: 55 },
+      { name: "High Performance Computing (HPC)", level: 40 },
+      { name: "Quantum Computing", level: 10 },
     ],
   },
-  {
-    id: "security",
-    label: "Security & Standards",
-    skills: [
-      { name: "Cybersecurity", level: 65 },
-      { name: "Agile Methodologies", level: 75 },
-      { name: "Architecture Governance", level: 80 },
-    ],
-  },
+  
   {
     id: "delivery",
     label: "Delivery & Operations",
